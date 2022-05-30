@@ -3,7 +3,9 @@ package com.rest.webapp.controller;
 import com.rest.webapp.model.Sales;
 import com.rest.webapp.service.SalesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
@@ -16,6 +18,10 @@ public class WebController {
         //InveteryService salesService =new InventoryServiceImpl();
         List<Sales> SalesList = salesService.getAllSalesDetail();;
         return SalesList;
+    }
+
+    public ResponseEntity inserSalesdetails(@RequestBody Sales sales){
+    return salesService.createSalesData(sales);
     }
 
 }

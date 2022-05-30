@@ -8,8 +8,10 @@ import java.util.List;
 public interface SalesDAO {
     List<Sales> findALl();
     Sales getSalesdetailbyID();
-    List GetSalesbysate();
+    List getSalesbysate();
     List getSalesbyDep();
-    int UpdateSalesDetails(Sales Sale);
-    int DeleteSalesDetail(long orderID);
+    int updateSalesDetails(Sales sales);
+    int deleteSalesDetail(long orderID);
+
+    int insertSalesDetail(Sales sales);
 }

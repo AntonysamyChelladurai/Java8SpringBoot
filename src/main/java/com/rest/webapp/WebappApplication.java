@@ -9,10 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.rest.webapp")
 public class WebappApplication implements CommandLineRunner {
 	public static void main(String[] args) {
-
 		SpringApplication.run(WebappApplication.class, args);
 	}
-
 	@Override
 	public void run(String... args) throws Exception {
 	}
