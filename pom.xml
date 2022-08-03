@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.7</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.rest</groupId>
-	<artifactId>webapp</artifactId>
+	<artifactId>CoreJava8</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Java8webapp</name>
-	<description>Java 8 features with Spring boot</description>
+	<name>SpringBootJava8</name>
+	<description>SpringBoot with Java8</description>
 	<properties>
 		<java.version>8</java.version>
 	</properties>
@@ -32,7 +32,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -54,6 +53,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>Java8</finalName>
 	</build>
 
 </project>

@@ -21,6 +21,7 @@ public class WebController {
     }
 
     public ResponseEntity inserSalesdetails(@RequestBody Sales sales){
+
     return salesService.createSalesData(sales);
     }
 
